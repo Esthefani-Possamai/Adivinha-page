@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinha</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js-page.js" defer></script>
+    <link rel="shortcut icon" href="icone-page/controle-de-jogo.png" type="image/x-icon">
+</head>
+    <body>
+        <header>
+            <a href="#"><h1>Adivinha</h1></a>
+        </header>
+    
+        <main class="container">
+            <form id="form">
+                <label for="kick">Digite um número (0-10): </label>
+                <input type="number" id="kick" max="10" placeholder="0">
+    
+                <button type="submit">Jogar</button>
+            </form>
+    
+            <button id="btnRestart" onclick="restart()">Jogar de novo</button>
+
+            <section class="result-box" id="result">
+                <h2 id="status">Adivinhe o número sorteado!</h2>
+                <span id="attempt">Tentativas: 0</span>
+            </section>
+        </main>
+    </body>
+</html>
